@@ -15,12 +15,12 @@ class Solution:
         for i in range(len(prefix_shifts)):
             prefix += prefix_shifts[i]
             prefix_shifts[i] = prefix
-        for indx in range(len(s)):
-            conv_dic = {}
-            i = 0
-            for j in range(97, 123):
-                conv_dic[i] = chr(j)
-                i += 1
+        conv_dic = {}
+        i = 0
+        for j in range(97, 123):
+            conv_dic[i] = chr(j)
+            i += 1
+        for indx in range(len(s)):  
             conv_value = ((ord(s[indx])-97) + prefix_shifts[indx])%26  
             output += conv_dic[conv_value]
         return output
