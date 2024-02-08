@@ -11,6 +11,4 @@ class Solution:
             if accumulator -goal in freq_sum:
                 ans += freq_sum[accumulator-goal]
             freq_sum[accumulator] = freq_sum.get(accumulator, 0)+1   
-        print(nums)
-        print(freq_sum)
         return ans
