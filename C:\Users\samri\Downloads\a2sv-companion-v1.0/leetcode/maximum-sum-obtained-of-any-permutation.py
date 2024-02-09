@@ -9,8 +9,6 @@ class Solution:
         for i in range(len(nums)):
             prefix += freq_indices[i]
             freq_indices[i] = prefix
-        print(sorted(freq_indices))
-        print(sorted(nums))
         return sum(num * freq for num, freq in zip(sorted(nums), sorted(freq_indices))) % (10 ** 9 + 7)
         
      
