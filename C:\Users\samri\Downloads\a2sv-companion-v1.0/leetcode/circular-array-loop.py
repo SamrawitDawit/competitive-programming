@@ -14,6 +14,7 @@ class Solution:
                     dic = {}
                     break
                 if (i+nums[i])%len(nums) in dic:
+                    print(dic)
                     return True
                 dic[i] = 1            
                 i = (i + nums[i])%len(nums)
