@@ -10,25 +10,10 @@ class Solution:
                 else:
                     prefix += nums[i]
                     i += 1
-                print(prefix)
                 target = prefix + 1
             else:
                 patch += 1
                 prefix += target 
                 target = prefix + 1
         return patch
-        # num = 1
-        # patches = 0
-        # i = 0
-        # prefix = 0
-        # desired = 1
-        # while prefix < n:
-        #     if prefix == desired:
-        #         prefix += nums[i]
-        #         i += 1
-        #         desired = prefix +1
-        #     # num = num + 1                                                                                                     
-            
-        #     # if num+1 == prefix:
-        #     #     num 
-        #     # prefix += (num + 1)
+        
