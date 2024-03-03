@@ -8,5 +8,4 @@ class Solution:
                 space = ceil(nums[i]/nums[i+1])
                 count += (space-1)
                 nums[i] = nums[i]//space
-                print(space, ceil(space/2))
         return count
